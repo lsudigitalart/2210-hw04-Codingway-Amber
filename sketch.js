@@ -1,7 +1,18 @@
 function setup() {
-    createCanvas (800, 600)
+    createCanvas (800, 600) 
+    noCursor();
 } 
 
-function draw() {
-    ellipse(mouseX, mouseY, 10);
+function draw() { 
+    background(0);
+    fill(255)
+    
+    ellipse(mouseX, mouseY, 50); 
+
+    if(mouseX > 200) {
+        if(mouseY > 200) {
+        fill(255, 200, 200);
+     }
+    }
+    square(200, 200, 200); 
 }
