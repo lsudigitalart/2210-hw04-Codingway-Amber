@@ -1,5 +1,7 @@
 let x, y;
-let speed = 5;
+let speed = 5; 
+let xSpeed = 10; 
+let ySpeed = 10;
 
 function setup() {
   createCanvas(600, 600);
@@ -25,5 +27,11 @@ function draw() {
   }
   if (keyIsDown(68)) { // D key
     x += speed;
-  }
+  } 
+
+
+  fill(245, 221, 64);
+  circle(0, 0, 70) 
+
+  
 }
